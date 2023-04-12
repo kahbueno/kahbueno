@@ -1,4 +1,4 @@
-### Hello there! Eu sou a Karenn Bueno (✿◡‿◡)
+### Hello there! Sou a Karenn (✿◡‿◡)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kahbueno&show_icons=true&theme=tokyonight)
 
