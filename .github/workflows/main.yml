@@ -1,0 +1,42 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+      Console.WriteLine("Olá, Calcularemos a viabilidade de combustivel!");
+        double precoAlcool, precoGasolina;
+        double relacaoConsumo = 0.7,relacaoPreco ;
+        string C = "S";
+
+        do
+        {
+            Console.Write("Digite o preço do álcool: ");
+            precoAlcool = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o preço da gasolina: ");
+            precoGasolina = double.Parse(Console.ReadLine());
+
+            relacaoPreco = precoAlcool / precoGasolina;
+
+            if (relacaoPreco == relacaoConsumo)
+            {
+                Console.WriteLine("Tanto faz álcool ou gasolina.");;
+            }
+            else if (relacaoPreco > relacaoConsumo)
+            {
+                Console.WriteLine("Abasteça com gasolina.");
+            }
+            else
+            {
+                Console.WriteLine("Abasteça com álcool.");
+                
+            }
+
+            Console.WriteLine("Deseja fazer outro cálculo? (S/N)");
+            C = Console.ReadLine();
+
+        } while (C.Equals("S",StringComparison.CurrentCultureIgnoreCase));
+    }
+}
